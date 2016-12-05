@@ -7,7 +7,7 @@ if (window.ActiveXObject) {
 
 function checkName(username){
   if(username == null || username == "") return;
-  var url = "check.php?username="+escape(username);
+  var url = "./check.php?username="+escape(username);
   xhr.open("GET", url, true);
   xhr.onreadystatechange = function() {
     window.alert("readyState");
