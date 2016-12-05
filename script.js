@@ -15,9 +15,12 @@ function checkName(){
 }
 
 function updatePage() {
+  window.alert("updatePage");
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
+          window.alert("xhr passed");
             var response = xhr.responseText;
+            window.alert(response);
             if(response == "true") window.alert("Username already taken.");
         }
     }
