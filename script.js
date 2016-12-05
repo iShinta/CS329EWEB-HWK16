@@ -6,16 +6,11 @@ if (window.ActiveXObject) {
 }
 
 function checkName(username){
-  window.alert(username);
   if(username == null || username == "") return;
   var url = "check.php?username="+escape(username);
-  window.alert(url);
   xhr.open("GET", url, true);
-  window.alert("open");
   xhr.onreadystatechange = updatePage();
-  window.alert("update");
   xhr.send(null);
-  window.alert("send");
 }
 
 function updatePage() {
