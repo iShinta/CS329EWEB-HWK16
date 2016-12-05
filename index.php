@@ -38,7 +38,7 @@
   ?>
   <!-- onkeyup onchange oninput -->
   <form method="post">
-    <span>Username :</span><input type="text" id="usename" name="username" onkeyup="checkName()" /><br />
+    <span>Username :</span><input type="text" id="usename" name="username" onkeyup="checkName(this.value)" /><br />
     <span>Password :</span><input type="text" id="password" name="password" /><br />
     <input type="submit" name="submit" />
     <input type="reset" name="reset" />

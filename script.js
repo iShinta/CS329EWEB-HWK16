@@ -5,8 +5,7 @@ if (window.ActiveXObject) {
   xhr = new XMLHttpRequest ();
 }
 
-function checkName(){
-  var username = document.getElementById("username").value;
+function checkName(username){
   window.alert(username);
   if(username == null || username == "") return;
   var url = "check.php?username="+escape(username);
