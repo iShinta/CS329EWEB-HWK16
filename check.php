@@ -10,7 +10,9 @@
   fclose($file);
   if(array_key_exists($username, $userlist)){
     $response = "true";
+    echo $response;
   }else{
     $response = "false";
+    echo $response;
   }
 ?>
