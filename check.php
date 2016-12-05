@@ -9,10 +9,11 @@
     $userlist[$line_pieces[0]] = $line_pieces[1];
   }
   fclose($file);
-
+  echo "SNSD";
   if(!array_key_exists($username, $userlist)){
     $response = "true";
   }else{
     $response = "false";
   }
+  echo "finish";
 ?>
