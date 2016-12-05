@@ -9,9 +9,7 @@ function checkName(username){
   if(username == null || username == "") return;
   var url = "./check.php?username="+escape(username);
   xhr.open("GET", url, true);
-  window.alert("Aloha");
   xhr.onreadystatechange = function() {
-    window.alert("readyState");
     if ((xhr.readyState == 4) && (xhr.status == 200)) {
       window.alert("xhr passed");
       var response = xhr.responseText;
