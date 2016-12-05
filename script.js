@@ -1,12 +1,10 @@
 var xhr;
-    if (window.ActiveXObject) {
-        xhr = new ActiveXObject ("Microsoft.XMLHTTP");
-    }
-    else if (window.XMLHttpRequest) {
-        xhr = new XMLHttpRequest ();
-    }
-    window.alert("XHR created");
+if (window.ActiveXObject) {
+  xhr = new ActiveXObject ("Microsoft.XMLHTTP");
+}else if (window.XMLHttpRequest) {
+  xhr = new XMLHttpRequest ();
 }
+window.alert("XHR created");
 
 function checkName(){
   var username = document.getElementById("username").value;
