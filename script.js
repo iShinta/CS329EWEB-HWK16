@@ -11,8 +11,7 @@ function checkName(username){
   xhr.open("GET", url, true);
   xhr.onreadystatechange = function() {
     if ((xhr.readyState == 4) && (xhr.status == 200)) {
-      window.alert("xhr passed");
-      var response = xhr.responseText;
+      var response = xhr.response;
       window.alert(response);
       if(response == "true") window.alert("Username already taken.");
     }
