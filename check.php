@@ -11,6 +11,6 @@
   fclose($file);
 
   if(!array_key_exists($username, $userlist)){
-    echo "true";
+    $response = "true";
   }
 ?>
