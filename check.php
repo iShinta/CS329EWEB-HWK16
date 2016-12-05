@@ -1,6 +1,6 @@
 <?php
   echo "SNSD";
-  $username = $_POST("username");
+  $username = "minhtri";
   echo "Yoona";
   $file = fopen("passwd", "r");
   echo "Taeyeon";
