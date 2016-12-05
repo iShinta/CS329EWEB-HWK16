@@ -6,7 +6,6 @@ if (window.ActiveXObject) {
 }
 
 function checkName(){
-  window.alert("check");
   var username = document.getElementById("username").value;
   window.alert(username);
   if(username == null || username == "") return;
