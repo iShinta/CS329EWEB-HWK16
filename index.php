@@ -22,7 +22,13 @@
 
     if(!array_key_exists($username, $userlist)){
       $file2 = fopen("passwd", "a");
-      fwrite($file2, $username.":".$password."\n");
+
+      //Encryption
+      $key = 'CS329';
+      $method = 'aes-128-cbc';
+      $password_encrypted = openssl_encrypt ($password, $method, $key);
+
+      fwrite($file2, $username.":".$password_encrypted."\n");
       fclose($file2);
       echo "<p>User Registered</p>";
     }else{
