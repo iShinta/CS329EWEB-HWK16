@@ -4,7 +4,6 @@ if (window.ActiveXObject) {
 }else if (window.XMLHttpRequest) {
   xhr = new XMLHttpRequest ();
 }
-window.alert("XHR created");
 
 function checkName(){
   var username = document.getElementById("username").value;

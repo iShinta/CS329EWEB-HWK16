@@ -37,8 +37,8 @@
   }
   ?>
   <form method="post">
-    <span>Username :</span><input type="text" name="username" onchange = "checkName();" /><br />
-    <span>Password :</span><input type="text" name="password" /><br />
+    <span>Username :</span><input type="text" id="usename" name="username" onchange = "checkName();" /><br />
+    <span>Password :</span><input type="text" id="password" name="password" /><br />
     <input type="submit" name="submit" />
     <input type="reset" name="reset" />
   </form>
