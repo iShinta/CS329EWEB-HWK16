@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <script src="logic.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <h1>Registration</h1>
