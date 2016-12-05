@@ -1,4 +1,5 @@
 <?php
+  echo "SNSD";
   $username = $_POST("username");
 
   $file = fopen("passwd", "r");
