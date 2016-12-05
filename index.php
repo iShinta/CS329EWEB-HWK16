@@ -37,7 +37,7 @@
   }
   ?>
   <form method="post">
-    <span>Username :</span><input type="text" name="username" onChange = "checkName();" /><br />
+    <span>Username :</span><input type="text" name="username" onchange = "checkName();" /><br />
     <span>Password :</span><input type="text" name="password" /><br />
     <input type="submit" name="submit" />
     <input type="reset" name="reset" />
