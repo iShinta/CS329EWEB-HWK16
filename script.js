@@ -13,7 +13,6 @@ function checkName(username){
     if ((xhr.readyState == 4) && (xhr.status == 200)) {
       var response = xhr.responseText;
       if(response == "true") window.alert("Username already taken.");
-      else if(response == "false") window.alert("Username not taken.")
     }
 	};
   xhr.send(null);
