@@ -43,5 +43,6 @@
     <input type="submit" name="submit" />
     <input type="reset" name="reset" />
   </form>
+  <p><a href="passwd"> List of usernames </a></p>
 </body>
 </html>
