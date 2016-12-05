@@ -7,6 +7,7 @@ if (window.ActiveXObject) {
 
 function checkName(){
   var username = document.getElementById("username").value;
+  window.alert(username);
   if(username == null || username == "") return;
   var url = "check.php?username="+escape(username);
   window.alert(url);
