@@ -18,6 +18,5 @@ function checkName(username){
       if(response == "true") window.alert("Username already taken.");
     }
 	};
-  xhr.onreadystatechange = updatePage();
   xhr.send(null);
 }
