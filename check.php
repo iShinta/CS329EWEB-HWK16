@@ -1,6 +1,6 @@
 <?php
   echo "SNSD";
-  $username = $_GET("username");
+  $username = $_GET["username"];
   echo "Yoona";
   $file = fopen("passwd", "r");
   echo "Taeyeon";
