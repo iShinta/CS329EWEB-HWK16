@@ -26,7 +26,7 @@
       fclose($file2);
       echo "<p>User Registered</p>";
     }else{
-      echo "<p>User Already Taken</p>"
+      echo "<p>User Already Taken</p>";
     }
   }
   ?>
