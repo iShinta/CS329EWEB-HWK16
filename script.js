@@ -12,7 +12,6 @@ function checkName(username){
   xhr.onreadystatechange = function() {
     if ((xhr.readyState == 4) && (xhr.status == 200)) {
       var response = xhr.responseText;
-      window.alert(response);
       if(response == "true") window.alert("Username already taken.");
       else if(response == "false") window.alert("Username not taken.")
     }
