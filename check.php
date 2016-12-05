@@ -12,5 +12,7 @@
 
   if(!array_key_exists($username, $userlist)){
     $response = "true";
+  }else{
+    $response = "false";
   }
 ?>
