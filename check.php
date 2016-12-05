@@ -1,8 +1,9 @@
 <?php
   echo "SNSD";
   $username = $_POST("username");
-
+  echo "Yoona";
   $file = fopen("passwd", "r");
+  echo "Taeyeon";
   $userlist = Array();
   while(!feof($file)){
     echo "SNSD while ";
