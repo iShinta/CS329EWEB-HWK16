@@ -1,5 +1,5 @@
 <?php
-  $username = $_GET("username");
+  $username = $_POST("username");
 
   $file = fopen("passwd", "r");
   $userlist = Array();
