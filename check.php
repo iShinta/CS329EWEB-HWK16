@@ -1,5 +1,4 @@
 <?php
-  alert("Je suis resourcebundle_get_error_code");
   $username = $_GET["username"];
   $file = fopen("passwd", "r");
   $userlist = Array();
