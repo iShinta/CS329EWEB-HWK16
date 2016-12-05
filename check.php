@@ -1,5 +1,5 @@
 <?php
-  $username = $_POST("username");
+  $username = $_GET("username");
 
   $file = fopen("passwd", "r");
   $userlist = Array();
@@ -9,11 +9,11 @@
     $userlist[$line_pieces[0]] = $line_pieces[1];
   }
   fclose($file);
-  echo "SNSD";
   if(!array_key_exists($username, $userlist)){
     $response = "true";
+    echo $response;
   }else{
     $response = "false";
+    echo $response;
   }
-  echo "finish";
 ?>
